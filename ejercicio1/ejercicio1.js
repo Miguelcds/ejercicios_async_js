@@ -48,21 +48,6 @@ document.body.appendChild(main)
      }));
 
 
-const footer = document.createElement("footer")
-
-const button = document.createElement("button")
-
-button.innerText ="Refresh"
-
-footer.appendChild(button)
-
-document.body.appendChild(footer)
-
-
-   
-button.addEventListener("click", () => {
-    window.location.reload()
-})
 
 
 
