@@ -28,8 +28,8 @@ main.appendChild(select)
 document.body.appendChild(main)
 
  fetch("https://thronesapi.com/api/v2/Characters")
-   .then((res) => res.json())
-   .then((res) => res.map((item) => {
+   .then((result) => result.json())
+   .then((result) => result.map((item) => {
        const option = document.createElement("option");
        option.innerHTML = item.fullName
        select.appendChild(option);
