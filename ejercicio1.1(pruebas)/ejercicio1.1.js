@@ -13,7 +13,7 @@ const select = document.createElement("select");
 
 const filter = async () => {
   try {
-    const res = await fetch("https://hronesapi.com/api/v2/Characters");
+    const res = await fetch("https://thronesapi.com/api/v2/Characters");
     const data = await res.json();
 
     data.map((item) => {
