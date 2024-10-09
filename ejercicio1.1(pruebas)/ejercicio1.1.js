@@ -13,7 +13,7 @@ const select = document.createElement("select");
 
 const filter = async () => {
   try {
-    const res = await fetch("https://thronesapi.com/api/v2/Characters");
+    const res = await fetch("https://hronesapi.com/api/v2/Characters");
     const data = await res.json();
 
     data.map((item) => {
@@ -40,7 +40,12 @@ const filter = async () => {
   } catch (error) {
     document.body.innerHTML = `
     <h2 class= "error"> Page under maintenance, sorry for the inconvenience!</h2>
+    <button id="refresh">Refresh</button>
     `;
+    const button = document.getElementById("refresh");
+    button.addEventListener("click", () => {
+      location.reload();
+    });
   }
 };
 
