@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    /* border: 10px solid red; */
+} 
+
+h1{
+    font-size: 80px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    height: 30%;
+    
+}
+
+option{
+    width: 100%;
+}
+
+img{
+    width: 30%;
+    margin-top: 20px;
+}
+
+.error{
+    font-size:50px;
+    border: 30px solid red;
+    margin-top: 300px;
+
+}
+
+
+footer{
+    margin: 40px;
+}
+
+/* select > option {
+    justify-content: center;
+    align-items: center;
+} */
